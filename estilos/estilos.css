@@ -14,18 +14,24 @@ main {
 }
 h1 {
     color:darkorange;
-    font-size: 20px;
+    font-size: 20pt;
 }
 h2 {
     color: darkslategrey;
-    font-size: 16px;
+    font-size: 14pt;
 
 }
 h3 {
-    font-size: 12px;
+    font-size: 10pt;
     color: slategrey;
+}
+h4 {
+    color: grey;
+    font-size: 10pt;
+
 }
 p {
     color:darkred;
-    font-size: 14px;
+    font-size: 10pt;
+
 }

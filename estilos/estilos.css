@@ -13,28 +13,30 @@ main {
     padding: 20px;
 }
 h1 {
-    color:darkorange;
+    color:darkgreen;
     font-size: 20pt;
     font-weight:100px;
     text-align:center;
 }
 h2 {
-    color: darkslategrey;
-    font-size: 12pt;
-
-    
+    color: darkgreen;
+    font-size: 16pt;
 }
 h3 {
-    font-size: 10pt;
-    color: slategrey;
-}
-h4 {
-    color: grey;
-    font-size: 10pt;
-
+    font-size: 14pt;
+    color: darkgreen;
 }
 p {
-    color:rgb(82, 1, 1);
+    color:black;
     font-size: 10pt;
-    
+    font-weight: lighter;
+    font-style: oblique;
+}
+p.destaque {
+    color:dimgray;
+    font-weight: 600;
+}
+p.pergunta {
+    font-weight: bold;
+    font-style: normal;
 }

@@ -25,12 +25,17 @@ h2 {
 h3 {
     font-size: 14pt;
     color: darkgreen;
+
+}
+h4 {
+    font-size: 10pt;
+    color:forestgreen
 }
 p {
     color:black;
     font-size: 10pt;
     font-weight: lighter;
-    font-style: oblique;
+    font-style: normal;
 }
 p.destaque {
     color:dimgray;

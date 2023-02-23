@@ -307,7 +307,123 @@
         <p>Utilizando a tag <mark>&lt;bdo dir="rtl"&gt;Para digitar um texto invertido&lt;/bdo&gt;</mark></p>
         <hr>
         <h3>Exercitando</h3>
-        <p class="pergunta"></p>
+        <p class="pergunta">1. A versão anterior da linguagem, a HTML4 era bastante focada no(a) _____ do conteúdo. Já a versão HTML5 já fica mais voltada para o(a) _____ da estrutura desse conteúdo.</p>
+        <p>HTML 4 era focada na <strong>forma</strong>, enquanto HTML5 é focada <strong>significado</strong>.</p>
+        <p class="pergunta">2. A HTML5 chegou com a proposta de definir as chamadas ______, onde cada instrução passa a ter um significado, não apenas uma forma.</p>
+        <p>Tags <strong>Semânticas</strong></p>
+        <p class="pergunta">3. Na lista a seguir, qual é a única tag que é focada em significado e não em forma?</p>
+        <p>&lt;strong&gt;</p>
+        <p class="pergunta">4. Qual das tags abaixo é a única que ainda permanece ativa? (todas as demais já estão na lista oficial de elementos obsoletos da HTML, disponível no link oficial da W3C)</p>
+        <p>&lt;aside&gt;</p>
+        <p class="pergunta">5. No lugar da tag &lt;b&gt; para negrito e &lt;i&gt; para itálico, é recomendável usar em HTML5 as novas tags:</p>
+        <p>&lt;strong&gt; e &lt;em&gt;</p>
+        <p class="pergunta">6. Em relação ao tamanho das letras de um texto e o uso das tags &lt;big&gt; e &lt;small&gt; em do cumentos HTML5, assinale a única afirmativa correta:</p>
+        <p>A tag &lt;big&gt; deixou de existir, e a tag &lt;small&gt; segue funcionando.</p>
+        <p class="pergunta">7. Quando for para sublinhar um texto no sentido de chamar a atenção para ele, deixamos de usar o antigo &lt;u&gt; e passamos a usar o novo:</p>
+        <p>Passamos a usar a tag &lt;ins&gt;</p>
+        <p class="pergunta">8. Para criar um texto sobrescrito (como em x2) usamos a tag _____ e para criar um texto subscrito (como em H2O), usamos a tag ______.</p>
+        <p>&lt;sub&gt;</p>
+        <p class="pergunta">9. Em HTML5, podemos criar citações utilizando a tag _____, incluindo o parâmetro _____ para indicar o link para o conteúdo original da citação.</p>
+        <p>&lt;blockquote cite="endereço do site"&gt;</p>
+        <p class="pergunta">10. Para inverter uma palavra ou frase, devemos usar a tag _____ com o parâmetro dir configurado para o valor _____.</p>
+        <p>&lt;bdo dir="rtl"&gt;</p>
+        <hr>
+        <h2>Listas em HTML 5</h2>
+        <hr>
+        <h3>Listas Ordenadas</h3>
+        <p class="destaque">Listas servem para simplificar e sintetizar o conteúdo a ser passado e faz a demarcação de cada item para facilitar a visualização.</p>
+        <p>Para criar uma <strong>lista ordenada</strong>, vamos usar a tag &lt;ol&gt; (ordered lists) para delimitar e &lt;li&gt; (list item) para identificar cada item.</p>
+        <ol type="I">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>            
+        </ol>
+        <h4>Parâmetro Type</h4>
+        <p>Listas ordenadas possuem um parâmetro <ins>type</ins>, onde configura-se o tipo de marcador da lista. As opções são:</p>
+        <ul type="circle">
+            <li>1: 1, 2, 3, 4...</li>
+            <li>A: A, B, C, D...</li>
+            <li>a: a, b, c, d...</li>
+            <li>I: I, II, III, IV...</li>
+            <li>i: i, ii, iii, iv...</li>
+        </ul>
+        <hr>
+        <h3>Listas não Ordenadas</h3>
+        <p class="destaque">Para criar <strong>listas não ordenadas</strong>, vamos usar a tag &lt;ul&gt; (unordered lists), para delimitar a lista e a tag &lt;li&gt; ára criar cada um dos seus elementos.</p>
+        <ul type="disc"><li>type="disc"</li></ul>
+        <ul type="circle"><li>type="circle"</li></ul>
+        <ul type="square"><li>type="square"</li></ul>
+        <hr>
+        <h3>Misturando as Coisas</h3>
+        <p class="destaque">Podemos também criar listas mistas, configurando listas dentro de outras listas. Veja a seguir:</p>
+<pre><code>
+    &lt;ol&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;ol type="a"&gt;
+        &lt;li&gt;Item 2.1&lt;/li&gt;
+        &lt;li&gt;Item 2.2&lt;/li&gt;
+        &lt;li&gt;Item 2.3&lt;/li&gt;
+    &lt;/ol&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;li&gt;Item 4&lt;/li&gt;
+        &lt;li&gt;Item 5&lt;/li&gt;
+    &lt;/ol&gt;
+</code></pre>
+        <p>Que resultará em:</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ol type="a">
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <li>Item 2.3</li>
+            </ol>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+        <p>Exemplo 2:</p>
+    <ul type="disc">
+        <li>Nintendinho</li>
+        <ol type="1">
+            <li>Mario Bross</li>
+            <ul type="square">
+                <li>Super Mario Bross 3</li>
+                <li>Mario: Lost Levels</li>                
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol type="1">
+            <li>Super Mario Word</li>
+            <li>Donkey Kong</li>
+            <ul type="square">
+                <li>Donkey Kong Contry III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type="square">
+                <li>Simphony of the Nigth</li>
+            </ul>
+        </ol>
+    </ul>
+        <hr>
+        <h3>Listas de Definição</h3>
+        <h4></h4>
     </article>
     </main>
 </body>
